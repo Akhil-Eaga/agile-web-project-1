@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Demonstration of HTML, CSS and JavaScript through examples">
+    <meta name="keywords" content="HTML, CSS, JavaScript, History, Evolution, Browser, Wars">
+    <meta name="author" content="Akhil Eaga">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demonstration</title>
+    
+    <!-- This page is designed to look and feel like a code playground as I am demonstrating the usage of HTML, CSS and JS codes. The black panes are styled to looks like code terminals of Linux or Unix systems and the right panes are kept in general style to check the output. The colors and fonts are chosen accordingly --> 
+    <!-- All the styles are present in one single css file.
+    Although coding so many styles in one css file is not a recommended practice. It has been done here due to the instructions provided in the project spec. -->
+    
+    
+    <!-- Google Font -->
+    <!-- Font Lato -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Ubuntu -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <!-- Ionicons Icon Pack -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Custom stylesheets and scripts -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="demo-header">
+        <nav>
+            <a href="history.html">History</a>
+            <a href="#">Demonstration</a>
+            <a href="biography.html">Biography</a>
+        </nav>
+    </header>
+
+    <main class ="demo-main-container">
+        <!-- Random Quote Generator -->
+        <div class="quote-of-the-day-container">
+            <h2 id="quote-of-the-day"><span><i class="ion-quote"></i></span> &nbsp; It's never too late to be who you might have been...</h2>
+            <p id="quote-author">- George Eliot</p>
+            <br>
+            <hr>
+            <button class = "demo-button" id ="quoteButton" onclick="randomQuoteGenerator()">New Quote</button>
+        </div>
+        <p>
+            <i>
+                **The above quote is created using AJAX calls to a quote API which responds with string data when a GET request is made. The string is parsed into JSON and being used to show random quotes from the API.
+            </i>
+        </p>
+        <br><hr><br>
+        <p>
+            In the section below, each example basically shows the code in the left window that generated the output in the right window. Each example ilustrates a different component. Please bear in the mind, indentation is not shown in the code windows for ease of implementation. 
+
+            Each output has a font family of Lato being applied to them to make them visually look good. Your output font family may differ if you copy and paste the code to check output.
+
+            The examples shown below are used in this project and can be seen from the code submiitted.
+        </p>
+        <br><hr><br>
+        <h3 class ="demo-section-heading">1. HTML Examples</h3>
+        <!-- Examples of usage of HTML/CSS/JS -->
+        <!-- h1 example -->
+        <h3 class ="example-heading">Example 1: &lt; h1 &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <!-- this is the div tag where the code snippet will get populated -->
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <h1>
+                    This is h1 heading and is the biggest heading of all
+                </h1>
+                <br> <!-- added to separate the two headings -->
+                <h6>This is h6 heading and is smallest of all</h6>
+            </div>
+        </div>
+
+        <!-- Anchor tag example -->
+        <h3 class ="example-heading">Example 2: &lt; a &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <a href="https://wikipedia.com" target="_blank"> Hyperlink to Wikipedia </a>
+            </div>
+        </div>
+
+        <!-- Paragraph tag example -->
+        <h3 class="example-heading">Example 3: &lt; p &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <p>This is how a paragraph looks like.</p>
+            </div>
+        </div> 
+
+        <!-- break tag example -->
+        <h3 class="example-heading">Example 4: &lt; br &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <p>This is line one</p>
+                <p>This is line two</p>
+                <br>
+                <p>This is line three with space above due to br tag</p>
+            </div>
+        </div> 
+
+        <!-- Block Quote tag example -->
+        <h3 class="example-heading">Example 5: &lt; blockquote &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+                </blockquote>
+                <br>
+                <p>The above is a quote cited from the worldwidelife.org and is outputted using the blockquote html tag and cited using the "cite" attribute</p>
+            </div>
+        </div> 
+
+        <!-- button tag example -->
+        <h3 class="example-heading">Example 6: &lt; button &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <!-- this is an unstyled button -->
+                <button type="button">Click Me!</button>
+            </div>
+        </div>
+
+        <!-- details tag example -->
+        <h3 class="example-heading">Example 7: &lt; details &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <details open>
+                    <summary>
+                        Epcot Center (click to show or hide text)
+                    </summary>
+                    <p>
+                        Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.
+                    </p>
+                  </details>
+            </div>
+        </div>
+
+        <!-- em tag example -->
+        <h3 class="example-heading">Example 8: &lt; em &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <em>This text is emphasized!</em>
+                <i>This is italic text with no additional semantic meaning like the &lt;em&gt; tag</i>
+            </div>
+        </div>
+
+        <!-- strong tag example -->
+        <h3 class="example-heading">Example 9: &lt; strong &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <strong>This text is important!</strong>
+            </div>
+        </div>
+
+        <!-- hr tag example -->
+        <h3 class="example-heading">Example 10: &lt; hr &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <p>This is topic 1</p>
+                <br>
+                <hr> <!-- this is the hr tag -->
+                <br>
+                <p>&lt;hr&gt; is used to describe a thematic change in the topic of discussion</p>
+            </div>
+        </div>
+
+        <!-- comment tag example -->
+        <h3 class="example-heading">Example 11: html comments</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <!-- Comment: Now You See ME :P -->
+                <p>This paragraph has a comment above it but it cannot be seen in the output !!!!</p>
+            </div>
+        </div>
+
+        <!-- img tag example -->
+        <h3 class="example-heading">Example 12: &lt; img &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <img src="https://c4.wallpaperflare.com/wallpaper/944/813/225/black-forest-germany-2560x1600-god-this-thread-sucks-low-res-2560x1600-nature-forests-hd-art-wallpaper-preview.jpg" alt="Girl in a jacket" width="100" height="120">
+                <br>
+                <i>** This is an image sourced from google images with the height and width attributes set to fit the image in this output window.</i>
+            </div>
+        </div>
+
+        <!-- nav tag example -->
+        <h3 class="example-heading">Example 13: &lt; nav &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <nav>
+                    <a href="https://www.w3schools.com/html/">HTML</a> |
+                    <a href="https://www.w3schools.com/css/">CSS</a> |
+                    <a href="https://www.w3schools.com/js">JavaScript</a> |
+                    <a href="https://www.w3schools.com/python/">Python</a>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- ol tag example -->
+        <h3 class="example-heading">Example 14: &lt; ul &gt; tag</h3>
+        <div class="demo-example-container">
+            <div class="demo-code-container">
+                <div></div>
+            </div>
+            <div class="demo-result-container">
+                <ul style="padding-left: 10px;">
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                    <li>This is an unordered list with some inline css styling to adjust padding</li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <h3 class = "demo-section-heading">2. CSS Examples</h3>
+        <p>CSS can be added to a html document in 3 different ways. They are: </p>
+        <br>
+        <ol style = "margin-left: 1rem;">
+            <li>Inline CSS</li>
+            <li>Internal CSS</li>
+            <li>External CSS</li>
+        </ol>
+        <br>
+        <!-- Inline CSS example -->
+        <p>The following code window shows an example of the inline css. The code for other styling methods are hard to show in this page. Hence the code will be shown somewhat differently.</p>
+        <br>
+        <h3 class="example-heading">Example 1: Inline CSS</h3>
+        <p>Inline CSS rules added using the style attribute within each element like it is shown below:</p>
+        <div class="css-code-example-container">
+            <div class="css-code-block">
+                &lt;p
+                style = 
+                "background-color: cadetblue; 
+                color: white; 
+                font-style: italic; 
+                padding: 5px; 
+                border: 2px solid black; 
+                border-radius: 3px;"&gt; This is a &lt;p&gt; with inline styling added to it. This styling makes it look good.&lt;/p&gt;
+            </div>
+            <div class="css-code-result">
+                <p
+                style = 
+                "background-color: cadetblue; 
+                color: white; 
+                font-style: italic; 
+                padding: 5px; 
+                border: 2px solid black; 
+                border-radius: 3px;">This is a &lt;p&gt; with inline styling added to it. This styling makes it look good.</p>
+            </div>
+        </div>
+        
+        <!-- Internal CSS example -->
+        <h3 class="example-heading">Example 2: Internal CSS </h3>
+        <p>Internal CSS rules are to be written inside the &lt;style&gt; tag which is supposed to be placed in the &lt;head&gt; tag of each html file.</p>
+        <br>
+
+        <div class = "css-code-example-container">
+            <div class="css-code-block">
+                &lt;style&gt;
+                /* html element is used as selector */ 
+                p {
+                 /* This is a comment in CSS */
+                    color: green;
+                    background-color: black;
+                    font-size: 1rem;
+                    padding: 1rem;
+                }
+                &lt;/style&gt;
+            </div>
+            <div class = "css-code-result">
+                <p style = "color: rgb(2, 168, 2);
+                background-color: black;
+                font-size: 1rem;
+                padding: 1rem;"> This is styled paragraph element</p>
+            </div>
+        </div>
+        <br>
+
+        <!-- External CSS example -->
+        <h3 class="example-heading">Example 3: External CSS </h3>
+        <p>External CSS rules are written in a totally different file and the &lt;link&gt; tag is used to connect the external style sheet and the html files to apply the styles written in the external style sheet</p>
+        <br>
+        <div class = "css-code-example-container">
+            <div class="css-code-block">
+                /* css code in file styles.css */
+                /* id is used as selector */
+                #special-button {
+                  color: white;
+                  background-color: black;
+                  border-radius: 10px;
+                  padding: 0.5rem 1rem 0.5rem 1rem;
+                  border-style: none;
+                  border: 3px solid black;
+                  font-size: 1rem;
+                  font-family: "Ubuntu Mono";
+                  transition: background-color 0.5s;
+                }
+                
+                /* pseudo class hover is used to change css properties on hovering over the element */
+                #special-button:hover {
+                  color: black;
+                  background-color: white;
+                }
+                --------------------------------------------
+                &lt;!-- html code in index.html file --&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                &lt;link rel="stylesheet" href="styles.css"&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;button id="special-button"&gt;Get in touch&lt;/button&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </div>
+            <div class = "css-code-result">
+                <button id = "special-button">Get in touch</button>
+                <br>
+                <br>
+                <br>
+                <p><i>** The above button is created using the styles mentioned in the code pane.</i>   </p>
+            </div>
+        </div>
+        <br>
+
+        <!-- JS EXAMPLES SECTION -->
+        <h3 class = "demo-section-heading">3. JavaScript Examples</h3>
+        
+        <p>
+            There are several places in this project where JavaScript is used to add more interactivity and functionality to the webpages. 
+            <br><br>
+            Examples of which are: <br><br>
+            1. The Typing Effect animation used in the hero section of the biography page <br>
+            2. The AJAX in conjuntion with DOM Manipulation to load a new random quote upon clicking the new quote button is also powered by JS functions. <br>
+            3. All of the HTML code examples section in this webpage are also partially automated to populate the code in the left code windows. Here in this section, the normal HTML code is written in the right side panes and DOM is used to extract the innerHTML and then replacing the &lt; and &gt; with their string equivalents. Then the trailing line breaks are removed using <em>regular expressions</em> and then overflow of the code lines is mitigated using CSS (white-space and word-wrap rules.) 
+        </p>
+        <br>
+        <p>In the following code examples we will see some of the JS functionality</p>
+
+        <!-- Example 1: Night Mode -->
+        <h3 class="example-heading">Example 1: Night mode function (DOM Manipulation using JS) </h3>
+        <div class = "js-code-example-container">
+            <div class = "js-code-block">
+                // this is the js function
+                function toggleMode(){
+                    var element = document.getElementById("color-changer");
+                    element.classList.toggle("night-mode")
+                }
+
+                ---------------------------------------------
+
+                &lt;!-- this is the html code --&gt;
+                &lt;div id = "color-changer" class = "night-mode" onclick = "toggleMode()"&gt;
+                    Click anywhere in this box to view a simple Night mode like effect. 
+                &lt;/div&gt;
+
+            </div>
+            <div class = "js-code-result">
+                Click on the box to toggle between night and day modes
+                <br> &nbsp; <br>
+                <div id = "color-changer" class = "night-mode" onclick = "toggleMode()">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae facilis sequi eius sed ea, dolorem eligendi ducimus aliquid quam molestiae enim voluptate esse maiores corrupti in? Suscipit, modi odio.
+                </div>
+            </div>
+        </div>
+
+        <!-- Example 2: jQuery Animations -->
+        <h3 class="example-heading">Example 2: jQuery Animations</h3>
+        <div class = "js-code-example-container">
+            <div class = "js-code-block">
+                // code that made the animation
+
+                function animatedBox(){
+                    $("#animatedBox").animate({
+                        left: '+=300px',
+                        height: "+=50px",
+                        width: "+=150px"
+                    });
+                }
+
+                --------------------------------------------
+
+                &lt;!-- html code for the box --&gt;
+                &lt;div style = 
+                "background-color:#98bf21;
+                height: 100px; 
+                width: 100px;
+                position: absolute;" id ="animatedBox"&gt;
+                &lt;/div&gt; 
+            </div>
+            <div class = "js-code-result" style="min-height: 250px; position: relative;">
+                <p>Click on the button to move and enlarge the green box</p><br>
+                <button class = "demo-button" onclick ="animatedBox()">Click to start animation</button>
+                <br> &nbsp; <br>
+                <div style = 
+                "background-color:#98bf21;
+                height: 30px; 
+                width: 100px;
+                position: absolute;" id ="animatedBox">
+                </div> 
+            </div>
+        </div>
+
+
+        <!-- Example 3: Simple Interest Calculator-->
+        <h3 class="example-heading">Example 3: Using JS to calculate Simple Interest</h3>
+        <div class = "js-code-example-container">
+            <div class = "js-code-block">
+                // Using HTML forms and JS to perform calculations
+                function calculateSimpleInterest(){
+                    var principal = document.getElementById("principal").value;
+                    var percentage = document.getElementById("interest").value;
+                    var years = document.getElementById("years").value;
+                    var resultElement = document.getElementById("simpleInterest");
+                
+                    // input validation 
+                    if(principal == "" || percentage == "" || years == ""){
+                        resultElement.innerHTML = "** please enter a valid input value";
+                        resultElement.style.color = "red";
+                    }
+                    else {
+                        principal = parseFloat(principal, 10);
+                        percentage = parseFloat(percentage, 10);
+                        years = parseFloat(years, 10);
+                
+                        if(Number.isNaN(principal) || Number.isNaN(percentage) || Number.isNaN(years)){
+                            resultElement.innerHTML = "** please input only numbers in all fields";
+                            resultElement.style.color = "red";
+                        } 
+                        else{
+                            var interestValue = principal * (percentage / 100) * years;
+                            resultElement.innerHTML = "Simple interest payable is :  &lt;strong style='color: green;'&gt;" + interestValue + "&lt;/strong&gt;";
+                        }
+                    }
+                }
+
+                &lt;!-- html code to make this --&gt;
+                &lt;p&gt;Simple Interest Calculator&lt;/p&gt;
+                &lt;br&gt;
+                &lt;label for="principal"&gt;Principal Amount (e.g., 10000)&lt;/label&gt;&lt;br&gt;
+                &lt;input name = "principal" type="text" id = "principal"&gt; 
+                &lt;br>&lt;br&gt;
+                &lt;label for="interest"&gt;Annual Percentage Interest (e.g, 3)&lt;/label&gt;&lt;br&gt;
+                &lt;input name = "interest" type="text" id = "interest"&gt;
+                &lt;br>&lt;br&gt;
+                &lt;label for="years"&gt;Number of years (e.g, 5.5)&lt;/label&gt;&lt;br&gt;
+                &lt;input type="text" name = "years" id = "years"&gt;
+                &lt;br&gt;&lt;br&gt;
+                &lt;p id = "simpleInterest">Result will appear here !&lt;/p&gt;
+                &lt;br&gt;
+                &lt;button class = "demo-button" onclick = "calculateSimpleInterest()"&gt;Calculate&lt;/button&gt;
+            </div>
+            <div class = "js-code-result">
+                <p>Simple Interest Calculator</p>
+                <br>
+                <label for="principal">Principal Amount (e.g., 10000)</label><br>
+                <input name = "principal" type="text" id = "principal"> 
+                <br><br>
+                <label for="interest">Annual Percentage Interest (e.g, 3)</label><br>
+                <input name = "interest" type="text" id = "interest">
+                <br><br>
+                <label for="years">Number of years (e.g, 5.5)</label><br>
+                <input type="text" name = "years" id = "years">
+
+                <br><br>
+                <p id = "simpleInterest">Result will appear here !</p>
+                <br>
+
+                <button class = "demo-button" onclick = "calculateSimpleInterest()">Calculate</button>
+            </div>
+        </div>
+        <br><br>
+        <p>These are some of the examples of HTML, CSS and JS code snippets and their content styles & effects along with the use of DOM Manipulation, jQuery and AJAX to add more interactivity and functionality to the webpages</p>
+    </main>
+    <br><br>
+    <footer class = "demo-footer">
+        <p><span>&#169;</span> &nbsp;2021 Coded with interest by <span>Akhil Eaga</span></p>
+    </footer>
+</body>
+</html>

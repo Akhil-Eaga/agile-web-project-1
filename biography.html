@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Brief biography of Akhil Eaga, a web developer based in Perth">
+    <meta name="keywords" content="Akhil, Eaga, HTML, CSS, JavaScript, Web Development, Programmer">
+    <meta name="author" content="Akhil Eaga">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biography - Akhil Eaga</title>
+
+    <!-- This page is written purely in HTML5 and CSS3 along with JS (along with jquery) 
+        without the use of any other CSS frameworks (apart from using the google fonts and ionicons icon pack).
+        This is done to demonstrate the ability to just work with the basic technologies.
+        Other two pages are used to show the ability to utilise the Bootstrap and more JS -->
+    <!-- All the styles are present in one single css file.
+    Although coding so many styles in one css file is not a recommended practice. It has been done here due to the instructions provided in the project spec. -->
+
+    <!-- Google Fonts -->
+    <!-- Font family Lato -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font family Kaushan Script -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <!-- Ionicons ICON PACK -->
+    <!-- This icon pack is used for this page. For history page I will use bootstrap icons -->
+    <!-- My intention was to show my ability to use different icon packs and external sources -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- Custom style sheets and scripts -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="bio-header">
+        <nav>
+            <div class="nav-bar">
+                <ul>
+                    <li><a href="history.html">history <span class = "color-theme">/</span>/</a></li>
+                    <li><a href="demonstration.html">demo <span class = "color-theme">/</span>/</a></li>
+                    <li><a href="#">biography <span class = "color-theme">/</span>/</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero-text">
+            <h1 id = "hero-heading-bio">Hi, I am Akhil Eaga...</h1>
+            <p><span class = "color-theme">#</span> a web developer</p>
+        </div>
+    </header>
+
+    <!-- About me Section -->
+    <section class = "about-me">
+        <h2 class = "reusable-heading">About <span class = "color-theme">Me</span></h2>
+        <div class = "row two-column-wrapper about-me-content">
+            <div class="two-column profile-photo-container">
+                <img id = "profile-photo" src="profile-photo.jpg" alt="Image of Akhil Eaga">
+            </div>
+            <div class="long-copy two-column">
+                <p>I am a current student of the University of Western Australia, majoring in the domain of Information Technology. I also work as a Web Developer at the Future of Work Institute (FOWI). Both at uni and work, I mainly use HTML5, CSS3 and JavaScript (ES6 standard) to create beautiful websites and web apps.</p>
+                <br><br>
+                <a href = "#" class ="red-button get-in-touch">Get in touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education gray-background">
+        <h2 class="reusable-heading">Education</h2>
+        <div class="row two-column-wrapper education-content">
+            <div class = "two-column uni-icon">
+                <i class ="ion-university"></i>
+            </div>
+            <div class = "two-column">
+                <div class="qualification-card">
+                    <div class="uni-name">
+                        <h3>Master of Information Technology</h3>
+                        <p>The University of Western Australia</p>
+                        <p>2020-2022</p>
+                    </div>
+                    <div class="uni-location">
+                        <div>
+                            <i class="ion-ios-location-outline"></i>
+                            &nbsp;
+                            Perth
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="qualification-card">
+                    <div class="uni-name">
+                        <h3>Bachelor of Mechanical Engineering </h3>
+                        <p>Birla Institute of Technology & Science</p>
+                        <p>2013-2018</p>
+                    </div>
+                    <div class="uni-location">
+                        <div>
+                            <i class="ion-ios-location-outline"></i>
+                            &nbsp;
+                            India
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2 class="reusable-heading">Projects</h2>
+        <div class="row two-column-wrapper projects-content">
+            <div class ="two-column project-1">
+                <div class="project-container">
+                    <div class = "project-icon">
+                        <i class="ion-social-html5-outline"></i>
+                    </div>
+                    <div class = "project-name">
+                        <p><a href = "https://akhil-eaga.github.io/project-omnifood/#" target="_blank">Web Development Project &nbsp; <i class="ion-link"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="two-column project-2">
+                <div class="project-container">
+                    <div class = "project-icon">
+                        <i class="ion-social-wordpress-outline"></i>
+                    </div>
+                    <div class = "project-name">
+                        <p><a href="https://prakrutikredesign.wordpress.com/prakrutik/" target ="_blank">WordPress Development &nbsp; <i class="ion-link"></i></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- <section class="skills gray-background">
+        <h1 class="reusable-heading">Skills</h1>
+    </section> -->
+
+    <!-- Connect with me Section -->
+    <section class="connect-with-me gray-background">
+        <h2 class="reusable-heading">Connect &nbsp; with &nbsp; <span class = "color-theme">me</span></h2>
+        <div class = "connect-with-me-content">
+            <div class="connect-linkedin">
+                <a href="https://www.linkedin.com/in/akhileaga
+                " target ="_blank"><i class="ion-social-linkedin-outline"></i></a>
+            </div>
+            <div class="connect-facebook">
+                <a href="https://www.facebook.com/eagaakhil" target = "_blank"><i class="ion-social-facebook-outline"></i></a>
+            </div>
+            <div class="download-resume">
+                <a href="https://drive.google.com/file/d/12kX21TvzxIvBMh1lyVIk1ylCVqh_7Afd/view?usp=sharing"  target ="_blank"><i class="ion-ios-download-outline"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class = "created-by">
+            <p><span class="color-theme">&#169;</span> 2021 Crafted with <span class = "color-theme"><i class="ion-ios-heart"></i></span> by <span class="color-theme">Akhil Eaga</span></p>
+        </div>
+    </footer>
+</body>
+</html>

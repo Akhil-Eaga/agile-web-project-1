@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Brief history and evolution of browsers, and particularly the technologies of HTML, CSS and JavaScript">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Programmer">
+    <meta name="author" content="Akhil Eaga">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History & Evolution</title>
+
+    <!-- This webpage is deliberately styled to look and feel like a blog post as the content suits the purpose of a blog post. It is intentional that I am styling each page of this project to have a distinct look to help the marker understand my ability to use HTML/CSS/JS to achieve different themes in webpages -->
+
+    <!-- All the styles are present in one single css file.
+    Although coding so many styles in one css file is not a recommended practice. It has been done here due to the instructions provided in the project spec. -->
+
+    <!-- Google Fonts -->
+    <!-- Libre Baskerville Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Hind Madurai Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- BOOTSTRAP CSS AND JS FILES -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Custom style sheets and scripts -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">TIME   {lapse  &nbsp;<i class = "ion-ios-infinite"></i>}</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="demonstration.html">Demonstration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="biography.html">Biography</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <!-- main content -->
+    <div class = "container">
+        <div class ="main-heading-container">
+            <h1 class = "main-heading">History and Evolution of Internet</h1>
+            <p class = "tagline"><em>Let's dive in to a brief history and evolution of browsers and web technologies</em></p>
+        </div>
+        
+        <p class="author author-name"><b>Author:</b> Akhil Eaga <span class = "green-badge"><a href="https://www.linkedin.com/in/akhileaga" target ="_blank">Follow</a></span></p>
+        <p class = "author publication-date"><em>Date of publication: 12-April-2021</em></p>
+        <div class="hero-image-container">
+            <figure>
+                <img class ="history-image" src="https://images.pexels.com/photos/67112/pexels-photo-67112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image of laptop with its browser application opened">
+                <figcaption>A macbook with a browser window opened. Source: pexels.com</figcaption>
+            </figure>
+        </div>
+
+        <!-- Introduction Section -->
+        <section class ="section-introduction">
+            <h2 class ="history-h2">0. Getting started</h2>
+            <p><strong>What is a web browser?</strong></p>
+
+            <blockquote class = "history-quote" cite= "https://en.wikipedia.org/wiki/History_of_the_web_browser"><i class="ion-quote"></i>  A web browser is a software application for retrieving, presenting and traversing information resources on the World Wide Web.  - <i>Wikipedia</i></blockquote>
+
+            <p class = "history-paragraph">As understood from the above, we all know that the fundamental role of the browser is to connect us with everything on the web. Our browser allows to search the web, find videos, uplod multimedia, play game, use web applications, and much much more. Technically speaking a browser is a software application that is capable to retrieving webpages, images, videos etc from the server and render it on the clients' computer. </p>
+
+            <p class = "history-paragraph">There are many popular browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, Opera etc.. Each browser respond diffently to webpages. This difference in the browsers' response led to <em class="history-em">cross-browser testing.</em> Let's take a look at the history of these major browsers and their backend to understand what it takes to design and develop a cross-compatible website.</p>
+
+            <figure>
+                <img class ="history-image" src="https://static1.smartbear.co/smartbearbrand/media/images/blog/history-01_1.png?ext=.png" alt="image of all major browsers">
+                <figcaption>Graphical representation of major browser logos. Source: smartbear.com</figcaption>
+            </figure>
+        </section>
+
+        <!-- Browser Timeline Section -->
+        <section class ="section-browser-timeline">
+            <h2 class="history-h2">1. Timeline of Browsers</h2>
+            <p class = "history-paragraph">There some browsers which were used in the past but are no longer in use today or some of those have evolved to a great extent.</p>
+            <div class ="timeline">
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1990</h3>
+                        <p>Tim Berners Lee, the inventor of the World Wide Web, created the world's first browser named <strong>WorldWideWeb</strong>.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1992</h3>
+                        <p>A text-based browser named <strong>Lynx</strong> that could not display images or any kind of graphic was created.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1993</h3>
+                        <p>The world's first most popular browser capable of embedding images in text was created. It is the <strong>Mosaic</strong>.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1994</h3>
+                        <p><strong>Netscape Navigator</strong> - a significant improvement to Mosaic was made.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1995</h3>
+                        <p>Microsoft launched it's first browser - <strong>Internet Explorer</strong>.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>1996</h3>
+                        <p>This year marked the start of <em>browser wars</em> (arguably). As Internet Explorer forged ahead with new features as compared to Netscape Navigator 3. This is the year when <strong>Opera</strong> went public after starting as research project in 1994.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2003</h3>
+                        <p>Instead of using Navigator, Apple released it's own <strong>Safari</strong> browser specific to their Macintosh computers.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2004</h3>
+                        <p>As Netscape Navigator faded into the dark, Mozilla launched <strong>Firefox</strong>.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2007</h3>
+                        <p>Apple launched their <em>mobile version</em> of <strong>Safari</strong> which till date continues to lead in the the iOS market.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2008</h3>
+                        <p>Google launched their browser <strong>Google Chrome</strong> which quickly took over the browser market.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2011</h3>
+                        <p>To focus on the fast-growing mobile browser market, Opera launched their <em>mobile version</em> called <strong>Opera Mini</strong>.</p>
+                    </div>
+                </div>
+                <!-- timeline element -->
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2015</h3>
+                        <p>Microsoft launched <strong>Edge</strong> to combat Google Chrome</p>
+                    </div>
+                </div>
+                <div class="timeline-element-container left">
+                    <div class="timeline-element-content">
+                        <h3>2020</h3>
+                        <p>In August of 2020, Microsoft announced that <strong>Internet Explorer</strong> will no longer be supported from 17 August, 2021, after the final update in November 2020</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML/CSS/JS History Section -->
+        <section class ="section-web-tech">
+            <h2 class ="history-h2">2. History of Web technologies: HTML/CSS/JavaScript</h2>
+            <div class ="web-icons-row">
+                <div>
+                    <i class="web-icon ion-social-html5"></i>
+                </div>
+                <div>
+                    <i class="web-icon ion-social-css3"></i>
+                </div>
+                <div>
+                    <i class="web-icon ion-social-javascript"></i>
+                </div>
+            </div>
+            
+            <!-- HTML history content -->
+            <div class="html-history-content">
+                <div class ="html-history-heading-container">
+                    <h3>A brief history of HTML: 1993 - Present</h3>
+                </div>
+                <p class = "history-paragraph">
+                    Tim Berners Lee wrote the first version of HTML in 1993. Many versions of HTML were developed since then. HTML 4.01 became an official standard in the December of 1999, and was the most widely used version of HTML throughout the 2000’s.
+                </p>
+                <p class = "history-paragraph">
+                    An XML version of HTML was created which was named XHTML. As a standard markup language XML was used to create several other markup languages. The content created in any of these markup languages can be easily across different applications because all these languages are written from XML. W3C created an XML version of HTML, called XHTML. In 2000, XHTML became an official standard which was updated 2 years later in 2002. While HTML is similar to XHTML, it has less restrictions. 
+                </p>
+                <p class = "history-paragraph">
+                    As HTML 4.01 was the standard in 2000’s much of the Web was either built on HTML 4.01 or XHTML 1.0. During the time of 2010-2011, W3C collaborated with another organization called WHATWG, and worked on developing a newer version of HTML. Even though it was in draft specification, HTML5 was widely supported by browsers and other devices which are capable of accessing the web, and paved the way into the future. The new version was named HTML5 and became an official standard in 2014 and has been the standard since then. 
+                </p>
+                <p class = "history-paragraph">
+                    As new versions emerge, HTML started to support more and more types of content. 
+                </p>
+                <p class = "history-paragraph">
+                    A table is shown below to summarize some of the prominent elements which received support in the newer version of HTML. During the early years of HTML, when web designers wanted to add some unsupported content, they had to use a work around and make use of proprietary, but non-standard software like the Adobe Flash. Many a times, browser plug-ins installation was required to access those content and, in some cases, certain users with devices like iPhone and iPads do not have support to Adobe Flash.
+                </p>
+                <p class = "history-paragraph">
+                    Hence HTML5 added a bunch of new features without relying on that non-standard proprietary software and enabled to do more with just the new version of HTML. 
+                </p>
+
+                <div class="table-responsive">
+                    <table class = "table">
+                        <tr>
+                            <th>Type of content</th>
+                            <th>HTML1.2</th>
+                            <th>HTML4.01</th>
+                            <th>HTML5</th>
+                            <th>Usage</th>
+                        </tr>
+                        <tr>
+                            <td>Heading</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Organize page content by adding headings and subheadings to the top of each section of the page</td>
+                        </tr>
+                        <tr>
+                            <td>Paragraph</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Identify paragraphs of text</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Identify a block of text that contains contact information</td>
+                        </tr>
+                        <tr>
+                            <td>Anchor</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Link to other web content</td>
+                        </tr>
+                        <tr>
+                            <td>List</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Organize items into a list</td>
+                        </tr>
+                        <tr>
+                            <td>Image</td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Embed a photograph or drawing into a web page</td>
+                        </tr>
+                        <tr>
+                            <td>Table</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Organize data into rows and columns</td>
+                        </tr>
+                        <tr>
+                            <td>Style</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Add CSS to control how objects on a web page are presented</td>
+                        </tr>
+                        <tr>
+                            <td>Script</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Add Javascript to make pages respond to user behaviors (more interactive)</td>
+                        </tr>
+                        <tr>
+                            <td>Audio</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Add audio to a web page with a single tag</td>
+                        </tr>
+                        <tr>
+                            <td>Video</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Add video to a web page with a single tag</td>
+                        </tr>
+                        <tr>
+                            <td>Canvas</td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td class ="dark-bg"><i class="ion-close"></i></td>
+                            <td><i class="ion-checkmark"></i></td>
+                            <td>Add an invisible drawing pad to a web page, on which you can add drawings (animations, games, and other interactive features) using Javascript</td>
+                        </tr>
+                    </table>
+                </div>
+                <p class ="table-citation">**The above table info was sourced from University of Washington</p>
+            </div>
+            
+            <!-- CSS history content -->
+            <div class="css-history-content">
+                <div class ="css-history-heading-container">
+                    <h3>A brief history of CSS: 1996 - Present</h3>
+                </div>
+                <p class = "history-paragraph">
+                    Hakon Wium Lie was the first to propose CSS on October 10 of 1994. Lie was working with Tim Berners Lee at CERN back at that time. Several other style sheet languages for the web were proposed at that time. Bert Bos’s  proposal was an influential one and he became the co-author of CSS1 and has been regarded as the co-creator of CSS in 1996.
+                </p>
+                <p class = "history-paragraph">
+                    Issues that were not addressed in CSS level 1, were tackled by the CSS Working Group resulting in the creation of CSS level 2 on 4th of November in 1997. CSS level 2 was published as a W3C recommendation on 12th May 1998. Development of CSS level 3 started back in 1998 and is the current standard in CSS.
+                </p>
+                <p class="history-paragraph">
+                    Each version of CSS builds up on the previous version and are named sequentially to denote the versions. Some of the notable advancements in each version are discussed below: 
+                </p>
+                <details class ="history-details" open>
+                    <summary>CSS 1</summary>
+                    <p class = "history-paragraph">
+                        Font properties, color & backgrounds of elements, text attributes, alignment of tables and images, margin, border, padding, unique identification and generic classification of groups of attributes.
+                    </p>
+                </details>
+                <details class ="history-details">
+                    <summary>CSS 2</summary>
+                    <p class = "history-paragraph">
+                        This version of CSS brought new features like absolute, relative and fixed positioning of elements, z-index, mediatypes and font shadows.
+                    </p>
+                </details>
+                <details class ="history-details">
+                    <summary>CSS 2.1</summary>
+                    <p class = "history-paragraph">
+                        This version of CSS fixed the errors that were present in CSS2 and removed poorly supported or not completely interoperable features and adds already implemented browser extensions to the official specification. CSS 2.1 became official standard on 7th June of 2011
+                    </p>
+                </details>
+                <details class ="history-details">
+                    <summary>CSS 3</summary>
+                    <p class = "history-paragraph">
+                        Unlike the second version of CSS which is a single large specification, CSS3 is broken down into several documents called modules. Each module added or extended the functionality defined in CSS2 while preserving backward compatibility. 
+                    </p>
+                </details>
+                <details class ="history-details">
+                    <summary>CSS 4</summary>
+                    <p class = "history-paragraph">
+                        There is no one single, integrated CSS4  specification, because it has been split in to different modules and are levelled independently. 
+                    </p>
+                    <p class = "history-paragraph">
+                        CSS Working Group sometimes publishes what are called as “Snapshot” which are essentially a collection of stable enough modules to be implemented by browsers. 
+                    </p>
+                </details>
+            </div>
+
+            <!-- JS history content -->
+            <div class="js-history-content">
+                <div class ="js-history-heading-container">
+                    <h3>A brief history of JavaScript: 1996 - Present</h3>
+                </div>
+                <p class="history-paragraph">
+                    JavaScript is ubiquitous (*almost) and is one of the most commonly used programming languages in the world. It comes as no surprise that that it has been ranked “the most commonly used” programming language for 8 years in a row. As of 2019, over 65% of developers employed JavaScript. The rise of JS is sometimes referred synonymously to the rise of internet itself. 
+                </p>
+                <p class="history-paragraph">
+                    JS was created out of necessity and is currently used to build more than 95% of the websites including the giants like Facebook, YouTube and eBay. JS adds a functionality and interactivity to websites and webpages. 
+                </p>
+                <p class="history-paragraph">
+                    During the mid-1990s, key players like Netscape and Microsoft were in the middle of browser war with both the browsers competing neck to neck. In 1995, a programmer from Netscape, Brandan Eich developed a new scripting language in just 10 days (Phew!!!). That first version was named as “Mocha” which later changed to LiveScript and now it is being referred as JavaScript. 
+                </p>
+                <p class="history-paragraph">
+                    Due to the rapid growth of JavaScript, Netscape handled the job of creating a language specification to European Computers Manufacturers Association (ECMA) in 1997.
+                </p>
+                <figure>
+                    <img class ="history-image" src="https://derivadow.files.wordpress.com/2007/01/ajax.png?w=506&h=309" alt="graphical representation of ajax and normal http requests">
+                    <figcaption>Graphic showing the difference in HTTP and AJAX requests</figcaption>
+                </figure>
+                <p class="history-paragraph">
+                    2005 marks a great year for JavaScript because of a paper released by Jesse James Garett who introduced Ajax, which is a revolutionary suite that made use of JS. Ajax makes the webpages looks and feel more like native apps thus improving the user experience. Although at that time, JS faced many challenges, like for example, being verbose to achieve simple tasks, but the community responded by creating popular JS frameworks and libraries like jQuery, Dojo and Mootools.   
+                </p>
+            </div>
+            
+        </section>  
+        <section class="history-outro">
+            <div class ="outro-heading-container">
+                <h3>Thank you for reading !!</h3>
+            </div>
+            <p class ="history-paragraph">
+                This article covered the history and evolution of browsers and the web technologies that power the web, HTML, CSS and JS.
+            </p>
+        </section>
+    </div>
+    <footer class="history-footer">
+        <div>&#169; 2021 Written with passion by <span>AKHIL EAGA</span></div>
+    </footer>
+
+
+</body>
+</html>
