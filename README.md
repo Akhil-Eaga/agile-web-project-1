@@ -14,6 +14,8 @@ Technologies used in this project are listed below:
 7) AJAX
 
 
+Check out this work in action at https://akhil-eaga.github.io/agile-web-project-1/ 
+
 P.S: Feel free to send your suggestions to akhil.bitsian2013@gmail.com
 
 Cheers
